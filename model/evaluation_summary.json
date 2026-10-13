@@ -1,0 +1,46 @@
+{
+  "test_set_size": 31500,
+  "test_fraud_count": 838,
+  "benchmark_models": {
+    "logistic_regression": {
+      "roc_auc": 0.9376251714552183,
+      "pr_auc": 0.7078750190011087,
+      "precision_default": 0.24657064471879286,
+      "recall_default": 0.8579952267303103,
+      "f1_default": 0.3830580713905168
+    },
+    "random_forest_champion": {
+      "roc_auc": 0.9326933480123336,
+      "pr_auc": 0.6156685317411088,
+      "precision_default": 0.3996415770609319,
+      "recall_default": 0.7983293556085919,
+      "f1_default": 0.5326433121019108
+    }
+  },
+  "tunable_thresholds": [
+    {
+      "Operating Policy": "70% Target Recall",
+      "Probability Threshold": 0.7048,
+      "Realized Recall (%)": 70.05,
+      "Realized Precision (%)": 61.02,
+      "Flagged Queue Volume": 962,
+      "Queue Alert Rate (%)": 3.05
+    },
+    {
+      "Operating Policy": "80% Target Recall",
+      "Probability Threshold": 0.4884,
+      "Realized Recall (%)": 79.95,
+      "Realized Precision (%)": 39.34,
+      "Flagged Queue Volume": 1703,
+      "Queue Alert Rate (%)": 5.41
+    },
+    {
+      "Operating Policy": "90% Target Recall",
+      "Probability Threshold": 0.1616,
+      "Realized Recall (%)": 89.98,
+      "Realized Precision (%)": 12.86,
+      "Flagged Queue Volume": 5865,
+      "Queue Alert Rate (%)": 18.62
+    }
+  ]
+}
